@@ -9,8 +9,11 @@ body {
 
 main {
   padding: 36px;
+<<<<<<< HEAD
   max-width: 500px;
   margin: auto;
+=======
+>>>>>>> e5fc7c22ffe1e0dd2bccb35a29ffab6ffe8d7f65
 }
 
 .header {

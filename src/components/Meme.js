@@ -11,8 +11,13 @@ export default function Meme() {
    */
 
   const [meme, setMeme] = React.useState({
+<<<<<<< HEAD
     topText: "One does not simply",
     bottomText: "Walk into Mordor",
+=======
+    topText: "",
+    bottomText: "",
+>>>>>>> e5fc7c22ffe1e0dd2bccb35a29ffab6ffe8d7f65
     randomImage: "http://i.imgflip.com/1bij.jpg",
   });
   const [allMemeImages, setAllMemeImages] = React.useState(memesData);
@@ -27,6 +32,7 @@ export default function Meme() {
     }));
   }
 
+<<<<<<< HEAD
   function handleChange(event) {
     const { name, value } = event.target;
     setMeme((prevFormData) => ({
@@ -54,14 +60,26 @@ export default function Meme() {
           name="bottomText"
           value={meme.bottomText}
         />
+=======
+  return (
+    <main>
+      <div className="form">
+        <input type="text" placeholder="Top text" className="form--input" />
+        <input type="text" placeholder="Bottom text" className="form--input" />
+>>>>>>> e5fc7c22ffe1e0dd2bccb35a29ffab6ffe8d7f65
         <button className="form--button" onClick={getMemeImage}>
           Get a new meme image 🖼
         </button>
       </div>
       <div className="meme">
         <img src={meme.randomImage} className="meme--image" />
+<<<<<<< HEAD
         <h2 className="meme--text top">{meme.topText}</h2>
         <h2 className="meme--text bottom">{meme.bottomText}</h2>
+=======
+        <h2 className="meme--text top">One does not simply</h2>
+        <h2 className="meme--text bottom">Walk into Mordor</h2>
+>>>>>>> e5fc7c22ffe1e0dd2bccb35a29ffab6ffe8d7f65
       </div>
     </main>
   );
