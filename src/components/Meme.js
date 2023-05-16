@@ -2,8 +2,6 @@ import React from "react";
 import memesData from "../memesData.js";
 
 export default function Meme() {
-
-
   const [meme, setMeme] = React.useState({
     topText: "",
     bottomText: "",
@@ -24,8 +22,18 @@ export default function Meme() {
   return (
     <main>
       <div className="form">
-        <input type="text" placeholder="Top text" className="form--input" />
-        <input type="text" placeholder="Bottom text" className="form--input" />
+        <input
+          type="text"
+          placeholder="Top text"
+          className="form--input"
+          value={meme.topText}
+        />
+        <input
+          type="text"
+          placeholder="Bottom text"
+          className="form--input"
+          value={meme.bottomText}
+        />
         <button className="form--button" onClick={getMemeImage}>
           Get a new meme image 🖼
         </button>
